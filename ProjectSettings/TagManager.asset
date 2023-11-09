@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fruit
   - Gem
+  - Door
   layers:
   - Default
   - TransparentFX

@@ -12,8 +12,6 @@ public class Spawners : MonoBehaviour
     public Transform[] fruitSpawnerPositions; // Array of fruit spawner positions
     public float despawnTime = 5.0f; // Time until crystals and fruits despawn
 
-    private int currentFriendshipPoints = 0;
-
     private void Start()
     {
         // Start spawning crystals and fruits
