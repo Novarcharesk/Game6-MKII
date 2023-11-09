@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector3 moveVector = transform.forward * moveSpeed * moveDirection.magnitude;
+        moveVector.y = 0;
         characterController.SimpleMove(moveVector);
 
         // Interact with objects (e.g., ladders, items) using spacebar
@@ -66,7 +67,7 @@ public class PlayerController : MonoBehaviour
         {
             // Implement ladder climbing logic
         }
-        // Example: Check if the object has a "Item" tag
+        // Example: Check if the object has an "Item" tag
         else if (interactableObject.CompareTag("Item"))
         {
             // Implement item pickup logic
